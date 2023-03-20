@@ -1,0 +1,27 @@
+name="tuticorin"
+num1=2
+num2=2
+print(num1+num2)
+print()
+print("From")
+print("Arun kumar")
+print("Bsc computer science")
+print(name.islower())
+print()
+
+print("To")
+print("The principal")
+print("Tmm arts and science college")
+print(name)
+print()
+print()
+print("Respected sir")
+print("         As i am suffering from fever,so i'm unable to attend the class.i request you,please grand me leave for one day")
+print("thanking you")
+print("yours obediently")
+print("arunkumar45".isalpha())
+print()
+print()
+print(2+2)
+print('computer')
+print('sakthi\'s')
