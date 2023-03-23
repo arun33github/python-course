@@ -1,11 +1,12 @@
 from circle import area_circle
-
-radius=int(input("enter a value: "))
-area_circle(radius)
-
-
-
 from circle import volume_sphere
+radius=int(input("enter a value: "))
+print(area_circle(radius))
+
+
+
+
+
 
 v=int(input("enter a value: "))
-volume_sphere(v)
+print(volume_sphere(v))
