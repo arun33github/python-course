@@ -1,0 +1,22 @@
+{
+    "emp_details": [
+        {
+            "name": "arun",
+            "age": "24",
+            "department": "developer",
+            "address": "tuty"
+        },
+        {
+            "name": "sam",
+            "age": "23",
+            "department": "testing",
+            "address": "kulathur"
+        },
+        {
+            "name": "neethi",
+            "age": "24",
+            "department": "accounts",
+            "address": "madurai"
+        }
+    ]
+}
