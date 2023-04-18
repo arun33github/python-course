@@ -51,10 +51,10 @@ def update_details():
     with open("file.json","r") as f:
         data=json.load(f)
         s_no=1
-        choice=input("what you want to update:")
+        choice=input("what you want to update(serial number):")
     for emp in data ["emp_details"]:
       if str(s_no)==choice: 
-          print("what do you like to edit:1.name\n2.age\n3.department\n4.address\n5.all")
+          print("what do you like to edit:\n1.name\n2.age\n3.department\n4.address\n5.all")
           choice_2=input("Enter your choice_2 : ")
           if choice_2=="1":
               name=input("enter a employee name:")

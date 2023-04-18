@@ -5,7 +5,7 @@ print("welcome to Employee Registration management!")
 
 
 while True:
-    print("you can perform below operations:")
+    print("you can perform below operations!:")
     print("1.registrtation\n2.view\n3.update\n4.delete")
     choice=input("Enter your operation:")
 
@@ -13,7 +13,7 @@ while True:
         json_1.emp_details()
 
     elif choice=="2":
-        print("you have chosen view employee details moddule :")
+        print("you have chosen view employee details module!:")
         json_1.view_details()
 
     elif choice=="3":
