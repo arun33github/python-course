@@ -15,7 +15,11 @@ while True:
     elif choice=="2":
         print("you have chosen view employee details moddule :")
         json_1.view_details()
-    
+
+    elif choice=="3":
+        print("you have chosen update module!:")
+        json_1.update_details()
+        
 
     if_continue=input("do you want to continue (y/n)? :")
     if if_continue=="y":

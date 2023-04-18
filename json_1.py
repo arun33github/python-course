@@ -27,7 +27,7 @@ def view_details():
     with open("file.json","r") as f:
         data=json.load(f)
 
-    print("s_no\temployee_name\temployee_age\temployee_dept\temployee_add")
+    # print("s_no\temployee_name\temployee_age\temployee_dept\temployee_add")
     s_no=1
     employees=[]
     for emp in data["emp_details"]:
@@ -41,5 +41,56 @@ def view_details():
         temp_list=[s_no,emp["name"],emp['age'],emp['department'],emp['address']]
         employees.append(temp_list)
         s_no+=1
-        print(employees)
-        print(tabulate(employees,headers=["s_no","name","age","department","address"]))
+        # print(employees)
+    print(tabulate(employees,headers=["s_no","name","age","department","address"])) 
+
+
+    
+def update_details(): 
+    view_details()
+    with open("file.json","r") as f:
+        data=json.load(f)
+        s_no=1
+        choice=input("what you want to update:")
+    for emp in data ["emp_details"]:
+      if str(s_no)==choice: 
+          print("what do you like to edit:1.name\n2.age\n3.department\n4.address\n5.all")
+          choice_2=input("Enter your choice_2 : ")
+          if choice_2=="1":
+              name=input("enter a employee name:")
+              emp["name"]=name
+              print("employee details updated successfully:")
+
+          elif choice_2=="2":
+              age=input("enter employee age:")
+              emp["age"]=age
+              print("employee details updated successfully:")
+
+
+          elif choice_2=="3":
+              department=input("enter a department:")
+              emp["department"]=department
+              print("employee details updated successfully:")
+              
+          elif choice_2=="4":
+              address=input("enter a updated address:")
+              emp["address"]=address
+              print("employee details updated successfully:")
+              
+          elif choice_2=="5":
+               name=input("enter a employee name:")
+               age=input("enter employee age:")
+               department=input("enter a department:")
+               address=input("enter a updated address:")
+               print("employee details updated successfully:")
+          else:
+             print("invalid choice")
+             break
+      s_no+=1
+
+    with open("file.json","w") as f:
+        json.dump(data,f,indent=4)
+
+
+
+               
