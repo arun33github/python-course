@@ -92,5 +92,23 @@ def update_details():
         json.dump(data,f,indent=4)
 
 
+           
+def delete_details(): 
+    view_details()
+    with open("file.json","r") as f:
+        data=json.load(f)
+        s_no=1
+        choice=input("Please Enter the Serial number you want to delete!:")
+    for emp in data ["emp_details"]:
+        if str(s_no)==choice:
+            data["emp_details"].remove(emp)
+            print("Employee details deleted successfully!!:")
+        s_no+=1
+
+        
+    with open("file.json","w") as f:
+        json.dump(data,f,indent=4)
+
+
 
                

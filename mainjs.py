@@ -19,6 +19,11 @@ while True:
     elif choice=="3":
         print("you have chosen update module!:")
         json_1.update_details()
+
+    elif choice=="4":
+        print("you have chosen delete module!:")
+        json_1.delete_details()
+
         
 
     if_continue=input("do you want to continue (y/n)? :")
