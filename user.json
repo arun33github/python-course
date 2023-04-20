@@ -1,0 +1,14 @@
+{
+    "students":[
+        {"user name":"arun",
+        "pass":"test"},
+        {"user name":"arun2",
+        "pass":"test2"}
+    ],
+    "techers":[
+        {"user name":"arun",
+        "pass":"test"},
+        {"user name":"arun2",
+        "pass":"test2"}
+    ]
+}
