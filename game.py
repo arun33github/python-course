@@ -16,5 +16,5 @@ while i<3:
         print("He won the five trophies in ipl ")
     
 
-print("you lose the game:")
+print("you lose the game....")
 
